@@ -59,10 +59,19 @@
     <Compile Include="Inicio.Designer.cs">
       <DependentUpon>Inicio.cs</DependentUpon>
     </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Inicio.resx">
       <DependentUpon>Inicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -86,6 +95,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CapaEntidad\CapaEntidad.csproj">
+      <Project>{5c4f341e-3362-4f7e-b423-80e03938290a}</Project>
+      <Name>CapaEntidad</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CapaNegocio\CapaNegocio.csproj">
+      <Project>{9256ecd5-b8df-4e9b-9229-b736f95b9dc2}</Project>
+      <Name>CapaNegocio</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
