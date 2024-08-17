@@ -38,7 +38,7 @@ namespace CapaPresentacion
             //Validamos en caso de que se encuentre un ususario le va a permitir loguearse caso contrario le va a mostrar un exception
             if(ousuario != null)
             {
-                Inicio form = new Inicio();
+                Inicio form = new Inicio(ousuario);
                 form.Show();// Mostramos el formulario de inicio
                 this.Hide();// ocultamos el login
 
